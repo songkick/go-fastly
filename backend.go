@@ -102,6 +102,9 @@ type CreateBackendInput struct {
 	MinTLSVersion       string   `form:"min_tls_version,omitempty"`
 	MaxTLSVersion       string   `form:"max_tls_version,omitempty"`
 	SSLCiphers          []string `form:"ssl_ciphers,omitempty"`
+	SSLCACert           string   `form:"ssl_ca_cert,omitempty"`
+	SSLClientCert       string   `form:"ssl_client_cert,omitempty"`
+	SSLClientKey        string   `form:"ssl_client_key,omitempty"`
 }
 
 // CreateBackend creates a new Fastly backend.
